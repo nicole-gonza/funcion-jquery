@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>pagina jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('ul').hide();
+                $('h3').click(function(){
+                    $('ul').show(1000);
+                });
+                 $('img').slideToggle(5000);
+                 $('.b2').hide();
+                $('h2').click(function(){
+                    $('button,.b2').fadeIn();
+                    $('button,.b2').fadeIn("slow");
+                    $('button,.b2').fadeIn(3000);
+                 });
+
+                
+            });
+        </script>  
+        <style>
+            body{
+                background-color: rgb(44, 119, 106);
+            }
+            h1{
+                background-color:rgb(192, 192, 60);
+                text-align: center;
+            }
+            img{
+                width: 1300px;
+                height: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            .indice{
+                display: inline-block;
+                width: 390px;
+                font-size: 20px;
+            }
+            .menu{
+                display: inline-block;
+                font-size: 30px;
+            }
+            #inscripcion{
+                width: 100px;
+                height: 70px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                
+            }
+            #b1{
+                height: 130px;
+                width: 370px;
+                font-size: 30px;
+                background-color: rgb(66, 60, 146);
+            }
+            .b2{
+                display:inline-block;
+                background-color: rgb(52, 31, 121);
+                color:white;
+                width: 140px;
+                height: 31px;
+            }
+        </style> 
+       
+    </head>
+    <body>
+        <h1>TU MUSICA</h1>
+        <img src="imagen 3.png" alt="musica">
+        <div class="indice"> 
+            <h3>Categoria</h3>
+            <ul>
+                <li>Romantica</li> 
+                <li>Cumbia</li>
+                <li>Reggeton </li>
+                <li>Jazz/blue</li>
+                <li>Alternativa</li>
+            </ul>
+        </div>
+        <div class="menu" >
+            <ol>
+            <li>Revisa las canciones mas populares <a href="www.google.cl">ver más</a></li> 
+            <li>Revisa las últimas canciones  <a href="www.google.cl">ver más</a></li>
+            <li><a href="www.google.cl">Acá</a> puedes ver las canciones mas escuchadas</li>
+            <li>Tambien puedes crear tu propia lista <a href="www.google.cl">Clik acá</a></li>
+            </ol>
+        </div>
+        <div id="inscripcion" >
+           <button id="b1">INSCRIBETE ACA</button> 
+        </div>
+        <div class="redes">
+            <h2>Siguenos en redes sociales</h2>
+                <button class="b2">Facebook</button>
+                <button class="b2">Instragram</button>
+                <button class="b2">Twitter</button>
+        </div>
+    </body>
+</html>
